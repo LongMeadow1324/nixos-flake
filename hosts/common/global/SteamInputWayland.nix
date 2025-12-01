@@ -2,7 +2,6 @@
 
 {
 
-environment.systemPackages = with pkgs; [steam extest];
 
   systemd.user.services.steam = {
     description = "Steam with custom LD_PRELOAD";
@@ -15,7 +14,9 @@ environment.systemPackages = with pkgs; [steam extest];
 
   # Define the wrapper script for launching Steam with LD_PRELOAD
   environment.systemPackages = with pkgs; [
-    (pkgs.writeShellScriptBin "launch-steam" ''
+steam
+extest    
+(pkgs.writeShellScriptBin "launch-steam" ''
 	systemctl --user start steam
     '')
   (pkgs.makeDesktopItem {

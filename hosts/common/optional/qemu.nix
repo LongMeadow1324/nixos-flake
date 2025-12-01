@@ -1,6 +1,6 @@
 {config, pkgs, ...}:
 {
-environment.systemPackages = with pkgs [virtiofsd]; 
+environment.systemPackages = with pkgs; [virtiofsd]; 
 
 #virtual machine stuff 
 programs.virt-manager.enable = true;

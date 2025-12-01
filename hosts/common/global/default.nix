@@ -1,4 +1,4 @@
-{ config, ...}:
+{ config, pkgs, ...}:
 {
   imports = [
 ./bluetooth.nix
@@ -27,4 +27,8 @@
   services.printing.enable = true;
 
   programs.firefox.enable = true; 
+
+  home-manager.useGlobalPkgs = true;
+  home-manager.backupFileExtension = "hm-backup"; 
+  home-manager.useUserPackages = true;
 }

@@ -1,4 +1,0 @@
-{pkgs, ...}:
-{
-stylix.enable = true; 
-}

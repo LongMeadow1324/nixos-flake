@@ -3,7 +3,6 @@
 imports = [
 #For the evilbox
 ./hardware-configuration.nix
-./evilbox.nix
 
 #Common things
 ../common/global
@@ -18,6 +17,7 @@ imports = [
 
 #Specific packages
 ../../pkgs/VirtualReality
+
 ];
 
 #Set the hostname :3
