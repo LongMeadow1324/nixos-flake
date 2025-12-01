@@ -1,0 +1,6 @@
+{ config, ...}:
+{
+  imports = [
+    ./SteamInputWayland.nix
+  ];
+}
