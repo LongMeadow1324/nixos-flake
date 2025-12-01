@@ -11,11 +11,12 @@ imports = [
 #So that hyprland isnt at an unusable scale
 ./features/desktop/hyprland/hyprland-monitors-virtual.nix
 
+./global
+./features/desktop/common/librewolf.nix
+
 #CLI Tools 
 ./features/cli
 
-#TODO: Delete Pkgs folder, merge with features/global folder. Refrence misterio77 on github
-./pkgs
 ];
 
   home.stateVersion = "25.11";
