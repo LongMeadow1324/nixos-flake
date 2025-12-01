@@ -36,7 +36,7 @@ stylix = {
     modules = [
       ./configuration.nix
       applications/SteamInputWayland.nix
-      hosts/evilbox/evilbox.nix 
+      hosts/evilbox 
       stylix.nixosModules.stylix
       home-manager.nixosModules.home-manager
       {
