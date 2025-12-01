@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, pkgs,  ... }:
 {
   programs.hyprpanel = {
     enable = true;
@@ -67,5 +67,40 @@
       };
     };
   };
+
+home.packages = with pkgs; [
+## To control screen/keyboard brightness
+brightnessctl
+
+## Only if a pywal hook from wallpaper changes applied through settings is desired
+pywal
+
+## To check for pacman updates in the default script used in the updates module
+
+## To switch between power profiles in the battery module
+
+## To take snapshots with the default snapshot shortcut in the dashboard
+grimblast
+
+## To record screen through the dashboard record shortcut
+wf-recorder
+
+## To enable the eyedropper color picker with the default snapshot shortcut in the dashboard
+hyprpicker
+
+## To enable hyprland's very own blue light filter
+hyprsunset
+
+## To click resource/stat bars in the dashboard and open btop
+btop
+
+## To enable matugen based color theming
+matugen
+
+## To enable matugen based color theming and setting wallpapers
+swww
+
+nerd-fonts.jetbrains-mono
+];
 
 }

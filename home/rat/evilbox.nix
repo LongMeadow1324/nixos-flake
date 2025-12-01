@@ -3,7 +3,7 @@
 
 imports = [
 
-#Desktop
+#Desktop environment
 ./features/desktop/hyprland
 ./features/desktop/hyprpanel
 ./features/desktop/fuzzel
@@ -11,10 +11,13 @@ imports = [
 #CLI Tools 
 ./features/cli
 
-#TODO: Delete Pkgs folder, merge with features/global folder. Refrence misterio77 on github
-./pkgs
+#Desktop packages and applications
+./features/desktop/common
+./global
 
+#WiVRN VR Path Fix
 ../../pkgs/VirtualReality/openvrpath.nix
 ];
 
+  home.stateVersion = "25.11";
 }

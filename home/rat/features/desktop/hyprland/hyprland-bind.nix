@@ -1,5 +1,9 @@
 { config, pkgs, ...}: 
 {
+
+#for screenshotting
+home.packages = with pkgs; [wl-clipboard grim slurp];
+
   wayland.windowManager.hyprland = { 
   
    enable = true; 
