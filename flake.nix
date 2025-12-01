@@ -42,7 +42,7 @@ stylix = {
       {
          home-manager.useGlobalPkgs = true;
          home-manager.useUserPackages = true;
-         home-manager.users.rat = {imports = [ ./home.nix];};
+         home-manager.users.rat = {imports = [ ./home.nix hosts/evilbox/home.nix];};
          home-manager.backupFileExtension = "hm-backup"; 
          home-manager.extraSpecialArgs = { inherit pkgs-unstable; };
       }

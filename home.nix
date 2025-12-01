@@ -6,10 +6,9 @@
   home.homeDirectory = "/home/rat";
   
 
-  imports = [
+imports = [
 dots/dotsinit.nix
 applications/homeapplications.nix
-applications/VirtualReality/vrinit.nix
 applications/hyprpanel.nix
 ];
 
