@@ -16,7 +16,7 @@ packages = with pkgs; [];
 
   home-manager.users.rat =
   {
-     import = ../../../../home/rat/${config.networking.hostName}.nix;
+     imports = [../../../../home/rat/${config.networking.hostName}.nix];
      
      home.username = "rat"; 
      home.homeDirectory = "/home/rat";
