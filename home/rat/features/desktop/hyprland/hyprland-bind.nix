@@ -13,7 +13,7 @@ bind = [
 "$mainMod, T, exec, $terminal"
 "$mainMod, SUPER_L, exec, pkill fuzzel || fuzzel"
 "$mainMod ALT, W, exec, mullvad-browser"
-"$mainMod ALT, A, exec, telegram-desktop"
+"$mainMod ALT, A, exec, Telegram"
 "$mainMod ALT, D, exec, vesktop"
 "$mainMod ALT, Q, exec, feishin"
 "$mainMod ALT, S, exec, launch-steam"

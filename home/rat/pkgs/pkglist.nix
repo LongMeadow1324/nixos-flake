@@ -15,8 +15,7 @@ home.packages =(with pkgs; [
   gedit
 
   # GNOME / QT theming
-
-
+  dualsensectl
   # Audio / Media
   mpd
   mpc
