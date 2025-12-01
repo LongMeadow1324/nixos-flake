@@ -8,6 +8,9 @@ imports = [
 ./features/desktop/hyprpanel
 ./features/desktop/fuzzel
 
+#So that hyprland isnt at an unusable scale
+./features/desktop/hyprland/hyprland-monitors-virtual.nix
+
 #CLI Tools 
 ./features/cli
 
