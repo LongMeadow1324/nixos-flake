@@ -5,8 +5,8 @@
   home.homeDirectory = "/home/rat";
 
 imports = [
-pkgs/ 
-dots/
+./pkgs
+./dots
 ];
 
   home.packages = with pkgs; [

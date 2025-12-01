@@ -1,5 +1,5 @@
 { config, ...}:
 {
- imports = [../../applications/VirtualReality/openvrpath.nix]; 
+ imports = [../../pkgs/VirtualReality/openvrpath.nix]; 
 }
 

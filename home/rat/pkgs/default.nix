@@ -1,7 +1,7 @@
 { config, ...}:
 {
  imports = [
- pkglist.nix
- hyprpanel/
+ ./pkglist.nix
+ ./hyprpanel
 ];
 } 

@@ -195,7 +195,7 @@ virtualisation.spiceUSBRedirection.enable = true;
 
   stylix = {
     enable = true;
-    image = dots/hyprlanddot/wallpaper.jpg;
+    image = home/rat/wallpaper.jpg;
     polarity = "dark";
     targets.gtk.enable = true;
     targets.qt.enable = true; 
