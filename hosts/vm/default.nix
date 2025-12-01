@@ -1,7 +1,7 @@
 {pkgs, lib, ...}:
 {
 imports = [
-#For the evilbox
+#For the vm
 ./hardware-configuration.nix
 
 #Common things
@@ -12,18 +12,15 @@ imports = [
 
 #Optional things
 ../common/optional/hyprland.nix
-../common/optional/nvidia-drivers.nix
-../common/optional/qemu.nix
-../common/optional/systemd-boot.nix
+../common/optional/grub.nix
 
 #Specific packages
-../../pkgs/VirtualReality
 
 ];
 
 #Set the hostname :3
 networking = {
-hostName = "evilbox";
+hostName = "vm";
 };
 
 system.stateVersion = "25.11"; 

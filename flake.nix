@@ -24,6 +24,7 @@ stylix = {
     name = "rat";
   in {
     nixosConfigurations = { 
+
     evilbox = lib.nixosSystem {
     inherit system;
     modules = [
@@ -40,7 +41,23 @@ stylix = {
       inherit pkgs-unstable; 
       };
     };
-  };
 
-  };
+   vm  = lib.nixosSystem {
+    inherit system;
+    modules = [
+      hosts/vm 
+      stylix.nixosModules.stylix
+      home-manager.nixosModules.home-manager
+      {
+         home-manager.extraSpecialArgs = { inherit pkgs-unstable; };
+      }
+   ];
+    specialArgs = { 
+      inherit username; 
+      inherit name; 
+      inherit pkgs-unstable; 
+      };
+    };
+  };  
+ };
 }

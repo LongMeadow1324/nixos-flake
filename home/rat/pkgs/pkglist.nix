@@ -2,7 +2,6 @@
 {
 home.packages =(with pkgs; [
   # Hyprland ecosystem
-  hyprland
   hyprpaper
   hypridle
   hyprlock
@@ -12,15 +11,10 @@ home.packages =(with pkgs; [
   kitty
   fuzzel
   vesktop
-  cider
   firefox
   gedit
 
   # GNOME / QT theming
-  anki
-  glib           # for gsettings
-  qt6Packages.qt6ct
-  adw-gtk3
 
 
   # Audio / Media

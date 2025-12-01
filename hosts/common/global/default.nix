@@ -11,7 +11,6 @@
 ./steam.nix    
 ./SteamInputWayland.nix
 ./stylix.nix
-./systemd-boot.nix
 ];
 
  environment.systemPackages = with pkgs; [
