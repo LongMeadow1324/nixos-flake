@@ -1,5 +1,10 @@
 { config, pkgs, lib, ...}:
 {
+  
+    networking.hostName = "evilbox"; # Define your hostname.
+  
+  imports = [ ../../applications/VirtualReality/VirtualRealityPackages.nix];   
+ 
   # Enable OpenGL
   hardware.graphics = {
     enable = true;

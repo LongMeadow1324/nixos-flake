@@ -29,29 +29,24 @@ stylix = {
     name = "rat";
   in {
     nixosConfigurations = { 
-    nixos = lib.nixosSystem {
+    evilbox = lib.nixosSystem {
     #"nixos" is the hostname, dont get this super confused, probably change this later too. 
     inherit system;
 	 
     modules = [
       ./configuration.nix
-      applications/VirtualReality/VirtualRealityPackages.nix
       applications/SteamInputWayland.nix
       hosts/evilbox/evilbox.nix 
-	stylix.nixosModules.stylix
-
-              home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-
-            # TODO replace ryan with your own username
-            home-manager.users.rat = {imports = [ ./home.nix];};
-            home-manager.backupFileExtension = "hm-backup"; 
-           # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
-           home-manager.extraSpecialArgs = { inherit pkgs-unstable; };
-          }
-      ];
+      stylix.nixosModules.stylix
+      home-manager.nixosModules.home-manager
+      {
+         home-manager.useGlobalPkgs = true;
+         home-manager.useUserPackages = true;
+         home-manager.users.rat = {imports = [ ./home.nix];};
+         home-manager.backupFileExtension = "hm-backup"; 
+         home-manager.extraSpecialArgs = { inherit pkgs-unstable; };
+      }
+   ];
     specialArgs = { 
       inherit username; 
       inherit name; 
