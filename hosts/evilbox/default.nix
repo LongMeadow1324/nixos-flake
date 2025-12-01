@@ -8,6 +8,14 @@ imports = [
 #Common things
 ../common/global
 
+#User account
+../common/users/rat
+
+#Optional things
+../common/optional/hyprland.nix
+../common/optional/nvidia-drivers.nix
+../common/optional/qemu.nix
+
 #Specific packages
 ../../pkgs/VirtualReality
 ];
@@ -16,5 +24,7 @@ imports = [
 networking = {
 hostName = "evilbox";
 };
+
+system.stateVersion = "25.11"; 
 
 }

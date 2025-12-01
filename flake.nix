@@ -34,7 +34,7 @@ stylix = {
     inherit system;
 	 
     modules = [
-      ./configuration.nix
+#      ./configuration.nix
       hosts/evilbox 
       stylix.nixosModules.stylix
       home-manager.nixosModules.home-manager

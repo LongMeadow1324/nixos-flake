@@ -1,6 +1,30 @@
 { config, ...}:
 {
   imports = [
-    ./SteamInputWayland.nix
-  ];
+./bluetooth.nix
+./displaymanager.nix
+./locale.nix
+./mullvad.nix
+./nautilus.nix
+./network.nix
+./pipewire.nix
+./steam.nix    
+./SteamInputWayland.nix
+./stylix.nix
+./systemd-boot.nix
+];
+
+ environment.systemPackages = with pkgs; [
+    vim
+    wget
+    git
+    nerd-fonts.jetbrains-mono
+];
+
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+  nixpkgs.config.allowUnfree = true;
+
+  services.printing.enable = true;
+
+  programs.firefox.enable = true; 
 }

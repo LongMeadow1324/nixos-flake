@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 
 {
+
+environment.systemPackages = with pkgs; [steam extest];
+
   systemd.user.services.steam = {
     description = "Steam with custom LD_PRELOAD";
     environment = {
