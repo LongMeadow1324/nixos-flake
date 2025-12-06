@@ -18,5 +18,6 @@
  ./vesktop.nix
  ./feishin.nix
  ./audacity.nix
+ ./stremio.nix
 ];
 }

@@ -36,7 +36,6 @@ bind = [
 "$mainMod ALT, I, exec, pkill hypridle"
 "$mainMod CTRL, I, exec, hypridle"
 "$mainMod, C, exec, hyprpicker -a"
-"$mainMod ALT, E, exec, mullvad-browser --new-window e621.net"
 "$mainMod, Z, exec, eww open --toggle power_menu --screen 1"
 
 
