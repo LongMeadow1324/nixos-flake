@@ -18,6 +18,8 @@
  ./vesktop.nix
  ./feishin.nix
  ./audacity.nix
- ./stremio.nix
+ ./tor-browser.nix
+ ./prismlauncher.nix
+# ./stremio.nix
 ];
 }

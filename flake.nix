@@ -12,14 +12,18 @@ stylix = {
       url = "github:nix-community/stylix/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, nixpkgs-unstable, stylix, ... }: 
+  outputs = inputs@{ nixpkgs, home-manager, nixpkgs-unstable, stylix, nix-flatpak, ... }: 
   let 
     system = "x86_64-linux";
     lib = nixpkgs.lib; 
     pkgs = nixpkgs.legacyPackages.${system};
-    pkgs-unstable = nixpkgs-unstable.legacyPackages.${system};
+    pkgs-unstable = import nixpkgs-unstable {
+	system = "x86_64-linux";
+	config = {allowUnfree = true;}; 
+};
     username = "rat";
     name = "rat";
   in {
@@ -29,6 +33,7 @@ stylix = {
     inherit system;
     modules = [
       hosts/evilbox 
+	nix-flatpak.nixosModules.nix-flatpak
       stylix.nixosModules.stylix
       home-manager.nixosModules.home-manager
       {

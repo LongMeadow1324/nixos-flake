@@ -15,7 +15,9 @@ imports = [
 ../common/optional/nvidia-drivers.nix
 ../common/optional/qemu.nix
 ../common/optional/systemd-boot.nix
-
+../common/optional/flatpak.nix
+../common/optional/sober.nix
+../common/optional/solaar.nix
 #Specific packages
 ../../pkgs/VirtualReality
 
@@ -27,5 +29,7 @@ hostName = "evilbox";
 };
 
 system.stateVersion = "25.11"; 
+
+
 
 }

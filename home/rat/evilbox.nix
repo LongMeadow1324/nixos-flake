@@ -19,5 +19,7 @@ imports = [
 ../../pkgs/VirtualReality/openvrpath.nix
 ];
 
+
   home.stateVersion = "25.11";
+  
 }

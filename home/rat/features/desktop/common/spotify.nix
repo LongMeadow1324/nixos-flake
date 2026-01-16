@@ -1,4 +1,4 @@
-{config, pkgs, ...}:
+{config, pkgs-unstable, ...}:
 {
-  home.packages = with pkgs; [spotify];
+  home.packages = with pkgs-unstable; [spotify];
 }

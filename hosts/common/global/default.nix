@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ config, pkgs, pkgs-unstable, ...}:
 {
   imports = [
 ./bluetooth.nix
@@ -11,6 +11,7 @@
 ./steam.nix    
 ./SteamInputWayland.nix
 ./stylix.nix
+./fonts.nix
 ];
 
  environment.systemPackages = with pkgs; [
@@ -18,16 +19,15 @@
     wget
     git
     nerd-fonts.jetbrains-mono
+    nwg-displays
 ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
   nixpkgs.config.allowUnfree = true;
-
   services.printing.enable = true;
 
   programs.firefox.enable = true; 
 
   home-manager.useGlobalPkgs = true;
   home-manager.backupFileExtension = "hm-backup"; 
-  home-manager.useUserPackages = true;
 }

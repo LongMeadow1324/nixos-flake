@@ -25,15 +25,31 @@
         };
       };
 
+      bar.layouts = {
+        "0" = {
+          left = [
+            "dashboard"
+            "workspaces"
+          ];
+          middle = [ ];
+          right = [
+            "volume"
+            "clock"
+            "notifications"
+          ];
+        };
+      };
+
+
+		
+
       bar.launcher.autoDetectIcon = true;
-      bar.workspaces.show_icons = true;
 
       bar.systray.ignore = ["Xwayland Video Bridge_pipewireToXProxy"];
 
       menus.clock = {
         time = {
           military = true;
-          hideSeconds = true;
         };
         weather.unit = "metric";
       };
@@ -48,8 +64,6 @@
   menus.dashboard.shortcuts.left.shortcut4.command = "fuzzel";
 
       theme.bar.transparent = false;
-      theme.bar.opacity = 50; 
-      theme.bar.buttons.background_opacity = 0; 
   theme.matugen = true;
   wallpaper.enable = false; 
   wallpaper.image = "/home/rat/Downloads/wallpaper.jpg";
@@ -60,10 +74,68 @@
   menus.clock.weather.key = "2087927a3adc49ae8d170556251911";
   theme.bar.buttons.opacity = 100;
   theme.bar.menus.opacity = 100;
+
+
+
+scalingPriority =  "both";
+  theme.bar.scaling =  80;
+  theme.notification.scaling =  80;
+  theme.osd.scaling =  80;
+  theme.bar.floating =  true;
+  theme.bar.opacity =  0;
+  theme.bar.buttons.background_opacity =  40;
+  theme.bar.buttons.monochrome =  false;
+  theme.bar.border.location =  "none";
+  theme.bar.enableShadow =  false;
+  theme.bar.buttons.radius =  "1.3em";
+  theme.bar.buttons.padding_y =  "0.2rem";
+  theme.bar.buttons.padding_x =  "0.7rem";
+  theme.bar.buttons.spacing =  "0.25em";
+  theme.bar.buttons.y_margins =  "0.1em";
+  theme.bar.buttons.innerRadiusMultiplier =  "0.7";
+  theme.bar.dropdownGap =  "1.8em";
+  theme.bar.margin_top =  "0.5em";
+  theme.bar.margin_sides =  "0em";
+  theme.bar.buttons.dashboard.enableBorder =  false;
+  bar.workspaces.monitorSpecific =  false;
+  bar.workspaces.show_icons =  false;
+  bar.workspaces.show_numbered =  false;
+  bar.workspaces.workspaceMask =  false;
+  bar.workspaces.showWsIcons =  true;
+  bar.workspaces.showApplicationIcons =  true;
+  bar.workspaces.applicationIconOncePerWorkspace =  true;
+  bar.workspaces.showAllActive =  false;
+  bar.workspaces.numbered_active_indicator =  "highlight";
+  theme.bar.buttons.workspaces.smartHighlight =  true;
+  theme.bar.buttons.workspaces.numbered_active_highlight_border =  "1em";
+  theme.bar.buttons.workspaces.numbered_active_highlight_padding =  "0.6em";
+  theme.bar.buttons.workspaces.numbered_inactive_padding =  "0.2em";
+  bar.workspaces.spacing =  1;
+  bar.workspaces.workspaces =  6;
+  bar.windowtitle.custom_title =  true;
+  bar.windowtitle.class_name =  true;
+  bar.windowtitle.label =  true;
+  bar.windowtitle.icon =  true;
+  bar.clock.format =  "%a %m/%d  %R:%S";
+  bar.clock.showIcon =  false;
+  bar.clock.showTime =  true;
+  theme.bar.buttons.clock.spacing =  "0em";
+  bar.media.show_active_only =  true;
+  bar.notifications.show_total =  true;
+  bar.notifications.hideCountWhenZero =  true;
+  notifications.monitor =  1;
+  notifications.position =  "top right";
+  theme.osd.orientation =  "horizontal";
+  theme.osd.location =  "bottom";
+  theme.osd.radius =  "2em";
+  theme.osd.muted_zero =  true;
+  menus.clock.time.hideSeconds =  false;
+  theme.font.size =  "1.2rem";
+  theme.bar.outer_spacing =  "0.6em";
+
   wallpaper.pywal = true;
       theme.font = {
         name = "JetBrains Mono";
-        size = "16px";
       };
     };
   };

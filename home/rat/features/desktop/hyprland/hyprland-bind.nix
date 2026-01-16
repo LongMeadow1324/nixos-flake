@@ -36,6 +36,7 @@ bind = [
 "$mainMod ALT, I, exec, pkill hypridle"
 "$mainMod CTRL, I, exec, hypridle"
 "$mainMod, C, exec, hyprpicker -a"
+"$mainMod ALT, E, exec, mullvad-browser --new-window e621.net"
 "$mainMod, Z, exec, eww open --toggle power_menu --screen 1"
 
 
@@ -57,6 +58,9 @@ bind = [
 "$mainMod, 8, workspace, 8"
 "$mainMod, 9, workspace, 9"
 "$mainMod, 0, workspace, 10"
+
+"$mainMod SHIFT, T, exec, hyprctl keyword monitor 'HDMI-A-1, disable' && hyprctl keyword monitor 'DP-1, disable' && hyprctl keyword monitor 'DP-2, 1920x1080@60.0, 978x0, 1.5'"
+"$mainMod SHIFT, Y, exec, hyprctl keyword monitor 'HDMI-A-1,1920x1080@119.88,3440x600,1, transform, 1' && hyprctl keyword monitor 'DP-1,3440x1440@99.98,0x1080,1.0' && hyprctl keyword monitor 'DP-2,1920x1080@60.0,978x0,1.0'"
 
 
 "$mainMod SHIFT, 1, movetoworkspace, 1s"
