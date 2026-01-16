@@ -12,7 +12,7 @@ imports = [
 
 #Optional things
 ../common/optional/hyprland.nix
-../common/optional/grub.nix
+../common/optional/systemd-boot.nix
 
 #Specific packages
 
