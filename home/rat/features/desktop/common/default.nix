@@ -20,6 +20,7 @@
  ./audacity.nix
  ./tor-browser.nix
  ./prismlauncher.nix
+ ./strawberry.nix
 # ./stremio.nix
 ];
 }
