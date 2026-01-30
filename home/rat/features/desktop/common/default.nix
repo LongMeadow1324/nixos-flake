@@ -22,6 +22,7 @@
  ./prismlauncher.nix
  ./strawberry.nix
  ./tigervnc.nix
+ ./veracrypt.nix
 # ./stremio.nix
 ];
 }
