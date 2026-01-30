@@ -21,6 +21,7 @@
  ./tor-browser.nix
  ./prismlauncher.nix
  ./strawberry.nix
+ ./tigervnc.nix
 # ./stremio.nix
 ];
 }
