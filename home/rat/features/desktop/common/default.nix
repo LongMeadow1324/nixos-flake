@@ -23,6 +23,7 @@
  ./strawberry.nix
  ./tigervnc.nix
  ./veracrypt.nix
+ ./discord.nix
 # ./stremio.nix
 ];
 }
