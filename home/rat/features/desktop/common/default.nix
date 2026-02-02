@@ -24,6 +24,7 @@
  ./tigervnc.nix
  ./veracrypt.nix
  ./discord.nix
+ ./easyeffects.nix
 # ./stremio.nix
 ];
 }
