@@ -10,6 +10,7 @@
  ./flatseal.nix
  ./mullvad-browser.nix
  ./mpv.nix
+ ./aonsoku.nix
  
 ];
 }
