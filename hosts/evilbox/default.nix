@@ -22,6 +22,7 @@ imports = [
 ../common/optional/mullvad.nix
 ../common/optional/steam.nix
 ../common/optional/SteamInputWayland.nix
+../common/optional/opensnitch.nix
 
 
 

@@ -13,6 +13,7 @@ imports = [
 
 #Desktop packages and applications
 ./features/desktop/common
+./features/desktop/common/flatpak
 ./global
 
 #WiVRN VR Path Fix

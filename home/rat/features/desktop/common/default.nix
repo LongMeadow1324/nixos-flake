@@ -26,5 +26,7 @@
  ./discord.nix
  ./easyeffects.nix
  ./konsole.nix
+ ./opensnitch-ui.nix
+ 
 ];
 }
