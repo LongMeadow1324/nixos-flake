@@ -25,6 +25,7 @@
  ./veracrypt.nix
  ./discord.nix
  ./easyeffects.nix
+ ./konsole.nix
 # ./stremio.nix
 ];
 }
