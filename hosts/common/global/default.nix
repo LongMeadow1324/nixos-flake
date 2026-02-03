@@ -1,15 +1,11 @@
 { config, pkgs, pkgs-unstable, ...}:
 {
   imports = [
-./bluetooth.nix
 ./displaymanager.nix
 ./locale.nix
-./mullvad.nix
 ./nautilus.nix
 ./network.nix
 ./pipewire.nix
-./steam.nix    
-./SteamInputWayland.nix
 ./stylix.nix
 ./fonts.nix
 ];

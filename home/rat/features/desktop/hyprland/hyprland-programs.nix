@@ -7,9 +7,6 @@ settings = {
 "$fileManager" = "nautilus";
 
 exec-once = [
-"sunshine"
-"wayvnc 0.0.0.0"
-"clipse -listen"
 "lxqt-policykit-agent"
 ];
 }; 

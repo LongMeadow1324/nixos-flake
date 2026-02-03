@@ -18,6 +18,13 @@ imports = [
 ../common/optional/flatpak.nix
 ../common/optional/sober.nix
 ../common/optional/solaar.nix
+../common/optional/bluetooth.nix
+../common/optional/mullvad.nix
+../common/optional/steam.nix
+../common/optional/SteamInputWayland.nix
+
+
+
 #Specific packages
 ../../pkgs/VirtualReality
 
@@ -30,6 +37,6 @@ hostName = "evilbox";
 
 system.stateVersion = "25.11"; 
 
-
+nix.allowedUsers = [ "root" ];
 
 }

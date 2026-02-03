@@ -6,5 +6,6 @@ services.flatpak.packages =
 "com.stremio.Service"
 "com.stremio.Stremio"
 "io.mrarm.mcpelauncher"
+"org.remmina.Remmina"
 ];
 }
