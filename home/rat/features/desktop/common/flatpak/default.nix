@@ -9,6 +9,7 @@
  ./tor.nix
  ./flatseal.nix
  ./mullvad-browser.nix
+ ./mpv.nix
  
 ];
 }
