@@ -37,6 +37,6 @@ hostName = "evilbox";
 
 system.stateVersion = "25.11"; 
 
-nix.allowedUsers = [ "root" ];
+nix.allowedUsers = [ "root" "rat"];
 
 }

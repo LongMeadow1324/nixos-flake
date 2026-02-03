@@ -27,6 +27,5 @@
  ./easyeffects.nix
  ./konsole.nix
  ./opensnitch.nix
-# ./stremio.nix
 ];
 }
