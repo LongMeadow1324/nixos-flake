@@ -2,9 +2,9 @@
 disko.devices = {
 disk = {
 sda = {
-type = "disk":
+type = "disk";
 device = "/dev/sda"; 
-content{
+content = {
 type = "gpt";
 partitions = { 
 ESP = {
@@ -16,7 +16,7 @@ content = {
 type = "filesystem"; 
 format = "vfat";
 mountpoint = "/boot";
-mountoptions = ["defaults"];
+mountOptions = ["defaults"];
 };
 };
 

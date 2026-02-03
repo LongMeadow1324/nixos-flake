@@ -15,6 +15,8 @@ imports = [
 ../common/optional/systemd-boot.nix
 ../common/optional/zram.nix
 
+./disk-config.nix
+
 #Specific packages
 
 ];
@@ -23,6 +25,14 @@ imports = [
 networking = {
 hostName = "vm";
 };
+
+    boot.initrd.luks.devices = {
+    cryptroot = {
+      device = "/dev/disk/by-partlabel/luks";
+      allowDiscards = true;
+    };
+  };
+
 
 system.stateVersion = "25.11"; 
 
