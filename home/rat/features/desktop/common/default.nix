@@ -4,7 +4,6 @@
  ./dualsensectl.nix
  ./firefox.nix
  ./librewolf.nix
- ./mpv.nix
  ./mullvad-browser.nix
  ./nicotine-plus.nix
  ./protonmail-desktop.nix
@@ -18,7 +17,6 @@
  ./vesktop.nix
  ./feishin.nix
  ./audacity.nix
- ./tor-browser.nix
  ./prismlauncher.nix
  ./strawberry.nix
  ./tigervnc.nix

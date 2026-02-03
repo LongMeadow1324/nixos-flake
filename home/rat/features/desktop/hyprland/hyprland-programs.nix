@@ -8,6 +8,7 @@ settings = {
 
 exec-once = [
 "lxqt-policykit-agent"
+"opensnitch-ui"
 ];
 }; 
 };

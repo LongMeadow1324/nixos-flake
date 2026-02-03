@@ -8,6 +8,7 @@
  ./stremio.nix
  ./tor.nix
  ./flatseal.nix
+ ./mullvad-browser.nix
  
 ];
 }

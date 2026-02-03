@@ -24,7 +24,8 @@ imports = [
 ../common/optional/SteamInputWayland.nix
 ../common/optional/opensnitch.nix
 
-
+#Flatpaks
+../../home/rat/features/desktop/common/flatpak
 
 #Specific packages
 ../../pkgs/VirtualReality
