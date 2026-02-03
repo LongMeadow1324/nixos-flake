@@ -26,6 +26,7 @@
  ./discord.nix
  ./easyeffects.nix
  ./konsole.nix
+ ./opensnitch.nix
 # ./stremio.nix
 ];
 }

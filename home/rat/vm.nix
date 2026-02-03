@@ -13,6 +13,7 @@ imports = [
 
 ./global
 ./features/desktop/common/librewolf.nix
+./features/desktop/common/konsole.nix
 
 #CLI Tools 
 ./features/cli
