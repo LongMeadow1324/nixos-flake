@@ -11,6 +11,7 @@ extraGroups = ifTheyExist [
 "wheel" 
 "libvirtd" 
 ];
+initialHashedPassword "$y$j9T$wHka4kn2P.J3H6gsMNDnx.$2VVfP99pUvU8yQaXvUtzmJGODtwWLjf5zdhQN7nJki4"
 packages = with pkgs; []; 
 };
 

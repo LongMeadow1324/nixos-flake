@@ -13,6 +13,7 @@ imports = [
 #Optional things
 ../common/optional/hyprland.nix
 ../common/optional/systemd-boot.nix
+../common/optional/zram.nix
 
 #Specific packages
 
