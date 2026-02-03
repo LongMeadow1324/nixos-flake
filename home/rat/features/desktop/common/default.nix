@@ -4,7 +4,6 @@
  ./dualsensectl.nix
  ./firefox.nix
  ./librewolf.nix
- ./mullvad-browser.nix
  ./nicotine-plus.nix
  ./protonmail-desktop.nix
  ./proton-pass.nix
@@ -24,7 +23,7 @@
  ./discord.nix
  ./easyeffects.nix
  ./konsole.nix
- ./opensnitch-ui.nix
+ ./mpv.nix
  
 ];
 }
