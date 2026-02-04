@@ -37,7 +37,7 @@ hostName = "vm";
 boot = {
 tmp = {
 useTmpfs = true; 
-tmpfsSize = "50%"
+tmpfsSize = "50%";
 };
 };
 

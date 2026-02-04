@@ -13,6 +13,8 @@ stylix = {
       inputs.nixpkgs.follows = "nixpkgs";
     };
 nix-flatpak.url = "github:gmodena/nix-flatpak";
+disko.url = "github:nix-community/disko/latest";
+disko.inputs.nixpkgs.follows = "nixpkgs"; 
   };
 
   outputs = inputs@{ nixpkgs, home-manager, nixpkgs-unstable, stylix, nix-flatpak, ... }: 
@@ -36,6 +38,7 @@ nix-flatpak.url = "github:gmodena/nix-flatpak";
 	nix-flatpak.nixosModules.nix-flatpak
       stylix.nixosModules.stylix
       home-manager.nixosModules.home-manager
+      inputs.disko.nixosModules.disko
       {
          home-manager.extraSpecialArgs = { inherit pkgs-unstable; };
       }
@@ -52,6 +55,7 @@ nix-flatpak.url = "github:gmodena/nix-flatpak";
     modules = [
       hosts/vm 
       stylix.nixosModules.stylix
+      inputs.disko.nixosModules.disko
       home-manager.nixosModules.home-manager
       {
          home-manager.extraSpecialArgs = { inherit pkgs-unstable; };
