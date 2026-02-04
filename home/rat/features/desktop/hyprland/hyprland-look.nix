@@ -3,6 +3,7 @@
 
 services.hyprpaper = { 
 enable = true; 
+package = pkgs.hyprpaper; 
 settings = { 
 preload = ["${../../../wallpaper.jpg}"];
 wallpaper = [" , ${../../../wallpaper.jpg}"]; 

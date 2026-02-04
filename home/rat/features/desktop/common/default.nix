@@ -1,4 +1,4 @@
-{config, ...}:
+{config, lib, ...}:
 {
  imports = [
  ./dualsensectl.nix
@@ -20,10 +20,13 @@
  ./strawberry.nix
  ./tigervnc.nix
  ./veracrypt.nix
- ./discord.nix
  ./easyeffects.nix
  ./konsole.nix
  ./mpv.nix
  
 ];
+
+nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+             "veracrypt"
+           ];
 }

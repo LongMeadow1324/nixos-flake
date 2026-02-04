@@ -23,4 +23,9 @@ packages = with pkgs; [];
      home.homeDirectory = "/home/rat";
   };
 
+nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+           "steam" "steam-unwrapped" "nvidia-x11" "veracrypt" "nvidia-settings"
+ 
+           ];
+
 }

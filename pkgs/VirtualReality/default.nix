@@ -9,7 +9,8 @@ users.users.rat.packages = with pkgs;
  xrizer 
  wivrn
  android-tools
- wlx-overlay-s
+# wlx-overlay-s
+wayvr
  stardust-xr-server
  motoc
 ]; 
@@ -42,7 +43,7 @@ services.wivrn = {
       };
     };
   };
-  services.wivrn.package = pkgs.wivrn.override { cudaSupport = true; };
+ # services.wivrn.package = pkgs.wivrn.override { cudaSupport = true; };
   environment.systemPackages = with pkgs; [ motoc ];
 
 } 

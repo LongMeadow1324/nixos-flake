@@ -12,18 +12,23 @@
 
  environment.systemPackages = with pkgs; [
     vim
-    wget
+   # wget
     git
     nerd-fonts.jetbrains-mono
-    nwg-displays
+    #nwg-displays
 ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
-  nixpkgs.config.allowUnfree = true;
-  services.printing.enable = true;
+  nixpkgs.config.allowUnfree = false;
+  #services.printing.enable = true;
 
-  programs.firefox.enable = true; 
+  #programs.firefox.enable = true; 
 
   home-manager.useGlobalPkgs = true;
   home-manager.backupFileExtension = "hm-backup"; 
+  
+  users.mutableUsers = false;
+
 }
+
+
