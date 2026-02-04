@@ -34,6 +34,21 @@ hostName = "vm";
   };
 
 
+boot = {
+tmp = {
+useTmpfs = true; 
+tmpfsSize = "50%"
+};
+};
+
+services.btrfs.autoScrub = {
+enable = true; 
+interval = "weekly";
+fileSystems = ["/"];
+};
+
+
+
 system.stateVersion = "25.11"; 
 
 }
