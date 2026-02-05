@@ -12,6 +12,7 @@
  #./mpv.nix
  ./aonsoku.nix
  ./vlc.nix
+ ./keepassxc.nix
  
 ];
 }
