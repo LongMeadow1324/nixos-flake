@@ -13,6 +13,7 @@
  ./aonsoku.nix
  ./vlc.nix
  ./keepassxc.nix
+ ./touche.nix
  
 ];
 }
