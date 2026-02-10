@@ -26,7 +26,6 @@
  ./gparted.nix
  ./obs.nix
  ./fastfetch.nix
- ./musly.nix
  
 ];
 
