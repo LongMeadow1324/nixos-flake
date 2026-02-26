@@ -16,10 +16,11 @@
     git
     nerd-fonts.jetbrains-mono
     #nwg-displays
+    gparted
 ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
-  nixpkgs.config.allowUnfree = false;
+  nixpkgs.config.allowUnfree = true;
   #services.printing.enable = true;
 
   #programs.firefox.enable = true; 

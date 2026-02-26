@@ -23,12 +23,13 @@ imports = [
 ../common/optional/steam.nix
 ../common/optional/SteamInputWayland.nix
 ../common/optional/opensnitch.nix
-
+#../common/optional/gamescope.nix
 #Flatpaks
 ../../home/rat/features/desktop/common/flatpak
 
 #Specific packages
 ../../pkgs/VirtualReality
+../../pkgs/silentsddm.nix
 
 ];
 

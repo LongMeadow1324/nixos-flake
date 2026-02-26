@@ -15,9 +15,13 @@ stylix = {
 nix-flatpak.url = "github:gmodena/nix-flatpak";
 disko.url = "github:nix-community/disko/latest";
 disko.inputs.nixpkgs.follows = "nixpkgs"; 
+   silentSDDM = {
+      url = "github:uiriansan/SilentSDDM";
+      inputs.nixpkgs.follows = "nixpkgs";
+};
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, nixpkgs-unstable, stylix, nix-flatpak, ... }: 
+  outputs = inputs@{ nixpkgs, home-manager, nixpkgs-unstable, stylix, nix-flatpak, silentSDDM, ... }: 
   let 
     system = "x86_64-linux";
     lib = nixpkgs.lib; 
@@ -37,12 +41,9 @@ disko.inputs.nixpkgs.follows = "nixpkgs";
       hosts/evilbox 
 	nix-flatpak.nixosModules.nix-flatpak
       stylix.nixosModules.stylix
+      silentSDDM.nixosModules.default
       home-manager.nixosModules.home-manager
-      pkgs/silentsddm.nix
       inputs.disko.nixosModules.disko
-      {
-         home-manager.extraSpecialArgs = { inherit pkgs-unstable; };
-      }
    ];
     specialArgs = { 
       inherit username; 
@@ -50,7 +51,21 @@ disko.inputs.nixpkgs.follows = "nixpkgs";
       inherit pkgs-unstable; 
       };
     };
-
+    otterbox = lib.nixosSystem {
+    inherit system;
+    modules = [
+      hosts/otterbox
+	nix-flatpak.nixosModules.nix-flatpak
+      stylix.nixosModules.stylix
+      home-manager.nixosModules.home-manager
+      inputs.disko.nixosModules.disko
+   ];
+    specialArgs = { 
+      inherit username; 
+      inherit name; 
+      inherit pkgs-unstable; 
+      };
+    };
    vm  = lib.nixosSystem {
     inherit system;
     modules = [
